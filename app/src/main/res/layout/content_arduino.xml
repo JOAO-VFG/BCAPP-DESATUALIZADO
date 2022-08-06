@@ -1,39 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-                                                   android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <Button
-            android:text="Conectar"
+            android:text="@string/conectar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.486"
-            app:layout_constraintVertical_bias="0.241" android:layout_marginLeft="84dp"
-            android:layout_marginStart="84dp"
+            app:layout_constraintVertical_bias="0.241" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             app:layout_constraintEnd_toStartOf="@+id/buttonMS9" android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp" android:id="@+id/ButtonConectarArduino"/>
+            android:layout_marginRight="20dp" android:id="@+id/buttonConectarArduino"/>
     <Button
-            android:text="Escolher conexão"
+            android:text="@string/led1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.486"
-            app:layout_constraintVertical_bias="0.241" android:layout_marginLeft="220dp"
-            android:layout_marginStart="220dp"
+            app:layout_constraintVertical_bias="0.348" android:layout_marginLeft="124dp"
+            android:layout_marginStart="124dp"
             app:layout_constraintEnd_toStartOf="@+id/buttonMS9" android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp" android:id="@+id/buttonConexaoArduino"/>
-    <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarST2"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-    />
+            android:layout_marginRight="20dp" android:id="@+id/buttonLED1"/>
+    <Button
+            android:text="@string/led2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintVertical_bias="0.458" android:layout_marginLeft="124dp"
+            android:layout_marginStart="124dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonMS9" android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp" android:id="@+id/buttonLED2"/>
+    <Button
+            android:text="@string/led3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintVertical_bias="0.575" android:layout_marginLeft="124dp"
+            android:layout_marginStart="124dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonMS9" android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp" android:id="@+id/buttonLED3"/>
+    <Button
+            android:text="@string/escolher_conex_o"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintVertical_bias="0.241" android:layout_marginLeft="232dp"
+            android:layout_marginStart="232dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonMS9" android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp" android:id="@+id/buttonConexaoArduino" tools:ignore="UnknownIdInLayout"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
